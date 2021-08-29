@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4e7fe7"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="Admin Main"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <LinearLayout
+                android:id="@+id/myLayout"
+                android:layout_width="match_parent"
+                android:layout_height="651dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/myview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/myrect"
+                    android:elevation="2dp"
+
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_marginBottom="17dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="100dp"
+                            android:paddingRight="10dp"
+                            android:text="Time Period: "
+                            android:textColor="@color/black"
+                            android:textSize="17dp"></TextView>
+
+                        <Spinner
+                            android:id="@+id/spinner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:drawSelectorOnTop="true"
+                            android:entries="@array/array_name" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/firstRowLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="196dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/ActivitiesInHoursLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
+                                android:gravity="center_horizontal"
+                                android:text="Acitivities" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="180dp"
+                                android:layout_height="175dp"
+                                android:layout_marginRight="10dp">
+
+
+                                <TextView
+                                    android:id="@+id/activities_percentage"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/circle_shape_1"
+                                    android:text="TextView"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.942"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.243" />
+
+                                <com.github.mikephil.charting.charts.PieChart
+                                    android:id="@+id/acticitiesInHours"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"></com.github.mikephil.charting.charts.PieChart>
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/newParentsLayout"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="New Parents" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="180dp"
+                                android:layout_height="175dp"
+                                android:layout_marginLeft="15dp">
+
+                                <TextView
+                                    android:id="@+id/newParents_percentage"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/circle_shape_2"
+                                    android:text="TextView"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.942"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.243" />
+
+                                <com.github.mikephil.charting.charts.PieChart
+                                    android:id="@+id/newParents"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"></com.github.mikephil.charting.charts.PieChart>
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/secondRowLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/newChildrenLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textViewNewChildren"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="New Children" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="180dp"
+                                android:layout_height="175dp"
+                                android:layout_marginRight="10dp">
+
+
+                                <TextView
+                                    android:id="@+id/newChildren_percentage"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/rounded_textview"
+                                    android:text="TextView"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.942"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.243" />
+
+                                <com.github.mikephil.charting.charts.PieChart
+                                    android:id="@+id/newChildren"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"></com.github.mikephil.charting.charts.PieChart>
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/totalPerCategoryLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textViewtotal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="Total Per Category" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="186dp"
+                                android:layout_height="175dp"
+                                android:layout_marginLeft="15dp">
+
+                                <com.github.mikephil.charting.charts.PieChart
+                                    android:id="@+id/kidsPerCategoryChart"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="175dp">
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="115dp"
+                            android:text="Annual Trends By Category" />
+
+                        <com.github.mikephil.charting.charts.BarChart
+                            android:id="@+id/bar_chart"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1">
+
+                        </com.github.mikephil.charting.charts.BarChart>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/coordinator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/relativeLayout">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/navigation"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                app:itemBackground="@color/white"
+                app:itemIconTint="@drawable/selector"
+                app:itemTextColor="@drawable/selector"
+                app:layout_anchorGravity="bottom|center"
+                app:menu="@menu/menu_navigation"></com.google.android.material.bottomnavigation.BottomNavigationView>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </LinearLayout>
+</ScrollView>

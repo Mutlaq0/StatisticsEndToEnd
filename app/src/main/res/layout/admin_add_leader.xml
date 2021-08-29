@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#4E7FE7"
+    tools:context=".AdminAddLeader" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Leader Profile"
+        android:layout_marginTop="30dp"
+        android:foregroundGravity="center"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="769dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background"
+            android:foregroundGravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/detailsLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:text="My Details"
+                android:textColor="#070101"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/leaderName"
+                android:layout_width="389dp"
+                android:layout_height="53dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_background"
+                android:ems="10"
+                android:hint="Full Name"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/leaderEmail"
+                android:layout_width="391dp"
+                android:layout_height="53dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_background"
+                android:ems="10"
+                android:hint="Email"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="5dp"
+                    android:layout_height="53dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/text_background"
+                    android:hint="Code"
+                    android:popupBackground="@drawable/text_background"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/leaderPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="53dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_background"
+                    android:ems="10"
+                    android:hint="Phone" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/leaderStreetAddress"
+                android:layout_width="400dp"
+                android:layout_height="53dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_background"
+                android:ems="10"
+                android:hint="Street Address"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/leaderState"
+                    android:layout_width="259dp"
+                    android:layout_height="53dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_background"
+                    android:ems="10"
+                    android:hint="State" />
+
+                <EditText
+                    android:id="@+id/leaderCity"
+                    android:layout_width="259dp"
+                    android:layout_height="53dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_background"
+                    android:ems="10"
+                    android:hint="City" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/leaderCountry"
+                    android:layout_width="259dp"
+                    android:layout_height="53dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_background"
+                    android:ems="10"
+                    android:hint="Country" />
+
+                <EditText
+                    android:id="@+id/countryZip"
+                    android:layout_width="259dp"
+                    android:layout_height="53dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_background"
+                    android:ems="10"
+                    android:hint="Zip" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/birthdayLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Birthday"
+                android:textColor="#070101"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/leaderBirthday"
+                android:layout_width="189dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_background"
+                android:drawableRight="@drawable/icons8_calendar_10_48"
+
+                android:ems="10"
+                android:inputType="date" />
+
+            <Button
+                android:id="@+id/addImageButton"
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_background"
+                android:backgroundTint="#4E7FE7"
+                android:text="Add profile pic" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="357dp"
+                android:layout_height="97dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_background" />
+
+            <Button
+                android:id="@+id/update"
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_background"
+                android:backgroundTint="#4E7FE7"
+                android:text="Update" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

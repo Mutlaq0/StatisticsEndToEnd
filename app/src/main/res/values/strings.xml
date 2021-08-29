@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="array_name">
+        <item>Week</item>
+        <item>Month</item>
+        <item>Year</item>
+    </string-array>
+    <string name="admin_main">Admin Main</string>
+
+    <string name="activities_in_hours">Activities In Hours</string>
+    <string name="home">home</string>
+    <string name="users">users</string>
+    <string name="leaders">leaders</string>
+    <string name="courses">courses</string>
+    <string name="more">more</string>
+    <string name="leadersTxt">Leaders</string>
+    <string name="moreText">More</string>
+</resources>
